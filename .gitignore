@@ -1,0 +1,12 @@
+.svn/
+NotUsed/
+output/
+packages/
+Sling/Get Calendar Example.txt
+App_Data/PublishProfiles/admin.marvellouscatering.net.pubxml
+website.publishproj
+packages.config
+Web.Live.old.config
+.vs/config/applicationhost.config
+Web.config
+.vs/

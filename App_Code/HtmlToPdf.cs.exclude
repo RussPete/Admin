@@ -1,0 +1,90 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.util;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+// for converting html to pdf
+using iTextSharp.text;
+using iTextSharp.text.html.simpleparser;
+using iTextSharp.text.pdf;
+
+// Copyright(c) 2005-2019 PeteSoft, LLC. All Rights Reserved 
+
+/// <summary>
+/// Summary description for HtmlToPdf
+/// </summary>
+public class HtmlToPdf
+{
+	public HtmlToPdf()
+	{
+		//
+		// TODO: Add constructor logic here
+		//
+	}
+
+	public static MemoryStream Convert(string Html)
+	{
+        HttpContext context = HttpContext.Current;
+ 
+        //Render PlaceHolder to temporary stream 
+        StringWriter StringWriter = new StringWriter();
+        HtmlTextWriter HtmlTextWriter = new HtmlTextWriter(StringWriter);
+ 
+        StringReader StringReader = new StringReader(Html);
+ 
+        //Create PDF document 
+        Document Doc = new Document(PageSize.LETTER);
+        HTMLWorker Parser = new HTMLWorker(Doc);
+		
+		MemoryStream MemoryStream = new MemoryStream();
+        PdfWriter PdfWriter = PdfWriter.GetInstance(Doc, MemoryStream);
+        Doc.Open();
+ 
+        /********************************************************************************/
+        Dictionary<string, object> InterfaceProps = new Dictionary<string, object>();
+        ImageHander ImgHandler = new ImageHander();		// { BaseUri = HttpContext.Current.Request.Url.ToString() };
+ 
+        InterfaceProps.Add(HTMLWorker.IMG_PROVIDER, ImgHandler);
+ 
+        foreach (IElement Element in HTMLWorker.ParseToList(
+            new StringReader(Html), null))
+        {
+            Doc.Add(Element);
+        }
+        /********************************************************************************/
+
+		PdfWriter.CloseStream = false;
+		Doc.Close();
+		MemoryStream.Position = 0;
+
+        return MemoryStream;         
+    }
+ 
+    // handle Image relative and absolute URL's
+    public class ImageHander : IImageProvider
+    {
+        public string BaseUri;
+        public iTextSharp.text.Image GetImage(string Src,
+            IDictionary<string, string> h,
+            ChainedProperties cProps,
+            IDocListener Doc)
+        {
+            string ImgPath = string.Empty;
+ 
+            if (Src.ToLower().Contains("http://") == false)
+            {
+                ImgPath = HttpContext.Current.Request.Url.Scheme + "://" + HttpContext.Current.Request.Url.Authority + Src;
+            }
+            else
+            {
+                ImgPath = Src;
+            }
+ 
+            return iTextSharp.text.Image.GetInstance(ImgPath);
+        }
+    }
+}
+	

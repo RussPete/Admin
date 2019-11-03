@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<configuration>
+  <appSettings>
+    <add key="mcUserPassword" value="mcc"/>
+    <!--<add key="mcDBHost" value="Russ-Laptop"></add>-->
+    <add key="mcDBHost" value="Server"/>
+    <add key="mcDBName" value="MarvellousCatering"/>
+    <!--<add key="mcDBHost" value="Russ"/>-->
+    <!--<add key="mcDBName" value="MarvellousCate"/>-->
+    <add key="mcDBUser" value="sa"/>
+    <add key="mcDBPass" value="sapass"/>
+    <add key="Email From" value="rachel@marvellouscatering.com"/>
+    <add key="Email CC" value="mcc_cc@petesoft.com"/>
+    <add key="Email Users" value="Rachel>Rachel|Jed>Jed|Jodi>Jodi|Robynn>Robynn|Jacque>Jaquelynn|Jaquelynn>Jaquelynn"/>
+
+    <add key="Attachment Dir" value="D:\PeteSoft\MarvellousCatering\Email Attachments"/>
+
+    <add key="ByKitchenLocation" value="false"/>
+    <add key="Charge CC Fee" value="false"/>
+
+    <add key="SlingEmail" value="russ@petesoft.com"/>
+    <add key="SlingPassword" value="2thetop"/>
+    <add key="SlingOrgId" value="4486"/>
+
+    <add key="SlingLocation" value="Utah County"/>
+    <add key="SlingPosition" value="Service Crew"/>
+    <add key="SlingDebug" value="true"/>
+
+    <add key="USAePay Gateway URL" value="https://sandbox.usaepay.com/interface/epayform"/>
+    <add key="USAePay Gateway Key" value="_aisi4iERwJa7aX8d29i8vLO2CLF2enl"/>
+
+    <add key="Company Legal Name" value="Marvellous Catering, L.L.C."/>
+    <add key="Company Name" value="Marvellous Catering"/>
+    <add key="Company Phone" value="(801) 374-0879"/>
+    <add key="Company Addr1" value="765 W. Columbia Lane"/>
+    <add key="Company Addr2" value="Provo, UT 84604"/>
+    <add key="Company Addr3" value=""/>
+    <add key="Info Email" value="info@marvellouscatering.com"/>
+    <add key="Credit Card Payment" value="We accept VISA, MasterCard and Discover. Sorry we do not accept AmericanExpress."/>
+    <add key="Recipe Book Copyright" value="2000"/>
+    <add key="Company Website" value="www.marvellouscatering.com"/>
+    <add key="Company Website URL" value="http://www.marvellouscatering.com/"/>
+    <add key="CustomerComfirmationLogoBackground" value="url(http://www.marvellouscatering.com/assets/img/marvelous-logo1.png) 50% 0 no-repeat"/>
+  </appSettings>
+  <system.net>
+    <mailSettings>
+      <smtp deliveryMethod="Network">
+        <network host="smtpout.secureserver.net" port="80" userName="EmailRelay@PeteSoft.com" password="send4me"/>
+      </smtp>
+    </mailSettings>
+  </system.net>
+  <system.web>
+    <!--  DYNAMIC DEBUG COMPILATION
+          Set compilation debug="true" to enable ASPX debugging.  Otherwise, setting this value to
+          false will improve runtime performance of this application. 
+          Set compilation debug="true" to insert debugging symbols (.pdb information)
+          into the compiled page. Because this creates a larger file that executes
+          more slowly, you should set this value to true only when debugging and to
+          false at all other times. For more information, refer to the documentation about
+          debugging ASP.NET files.
+    -->
+    <compilation defaultLanguage="c#" debug="true" targetFramework="4.0">
+      <assemblies>
+        <add assembly="System.Web.Abstractions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+        <add assembly="System.Data.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Data.Services.Client, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Data.Services.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Data.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089"/>
+        <add assembly="System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B03F5F7F11D50A3A"/>
+        <add assembly="System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35"/>
+      </assemblies>
+    </compilation>
+    <!--  CUSTOM ERROR MESSAGES
+          Set customErrors mode="On" or "RemoteOnly" to enable custom error messages, "Off" to disable. 
+          Add <error> tags for each of the errors you want to handle.
+
+          "On" Always display custom (friendly) messages.
+          "Off" Always display detailed ASP.NET error information.
+          "RemoteOnly" Display custom (friendly) messages only to users not running 
+           on the local Web server. This setting is recommended for security purposes, so 
+           that you do not display application detail information to remote clients.
+    -->
+    <customErrors mode="Off"/>
+    <!--  AUTHENTICATION 
+          This section sets the authentication policies of the application. Possible modes are "Windows", 
+          "Forms", "Passport" and "None"
+
+          "None" No authentication is performed. 
+          "Windows" IIS performs authentication (Basic, Digest, or Integrated Windows) according to 
+           its settings for the application. Anonymous access must be disabled in IIS. 
+          "Forms" You provide a custom form (Web page) for users to enter their credentials, and then 
+           you authenticate them in your application. A user credential token is stored in a cookie.
+          "Passport" Authentication is performed via a centralized authentication service provided
+           by Microsoft that offers a single logon and core profile services for member sites.
+    -->
+    <!--<authentication mode="Windows" />-->
+    <!--  AUTHORIZATION 
+          This section sets the authorization policies of the application. You can allow or deny access
+          to application resources by user or role. Wildcards: "*" mean everyone, "?" means anonymous 
+          (unauthenticated) users.
+    -->
+    <authorization>
+      <allow users="*"/>
+      <!-- Allow all users -->
+      <!--  <allow     users="[comma separated list of users]"
+                             roles="[comma separated list of roles]"/>
+                  <deny      users="[comma separated list of users]"
+                             roles="[comma separated list of roles]"/>
+            -->
+    </authorization>
+    <!--  APPLICATION-LEVEL TRACE LOGGING
+          Application-level tracing enables trace log output for every page within an application. 
+          Set trace enabled="true" to enable application trace logging.  If pageOutput="true", the
+          trace information will be displayed at the bottom of each page.  Otherwise, you can view the 
+          application trace log by browsing the "trace.axd" page from your web application
+          root. 
+    -->
+    <trace enabled="false" requestLimit="10" pageOutput="false" traceMode="SortByTime" localOnly="true"/>
+    <!--  SESSION STATE SETTINGS
+          By default ASP.NET uses cookies to identify which requests belong to a particular session. 
+          If cookies are not available, a session can be tracked by adding a session identifier to the URL. 
+          To disable cookies, set sessionState cookieless="true".
+    -->
+    <!--sessionState 
+            mode="InProc"
+            stateConnectionString="tcpip=127.0.0.1:42424"
+            sqlConnectionString="data source=127.0.0.1;Trusted_Connection=yes"
+            cookieless="false" 
+            timeout="20" 
+    /-->
+    <!--<sessionState
+            mode="InProc"
+            cookieless="false"
+            timeout="20"
+    />-->
+    <sessionState mode="SQLServer" sqlConnectionString="Data Source=server; User ID=sa; Password=sapass;" allowCustomSqlDatabase="true" cookieless="false" timeout="120"/>
+    <!--  GLOBALIZATION
+          This section sets the globalization settings of the application. 
+    -->
+    <globalization requestEncoding="utf-8" responseEncoding="utf-8"/>
+    <httpHandlers>
+      <!--
+      <remove verb="*" path="*.asmx"/>
+      <add verb="*" path="*.asmx" validate="false" type="System.Web.Script.Services.ScriptHandlerFactory, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"/>
+      <add verb="GET" path="ScriptResource.axd" type="System.Web.Handlers.ScriptResourceHandler" validate="false"/>
+      -->
+    </httpHandlers>
+    <httpRuntime/>
+    <pages controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID"/>
+  </system.web>
+</configuration>

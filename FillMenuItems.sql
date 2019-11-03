@@ -1,0 +1,1 @@
+Insert Into mcJobMenuItems (Category, MenuItem, CreatedDtTm, CreatedUser) Select Distinct Category, MenuItem, GetDate(), 'Sys' From mcJobFood

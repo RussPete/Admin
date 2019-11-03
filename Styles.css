@@ -1,0 +1,1873 @@
+/* Default CSS Stylesheet for a new Web Application project */
+
+body, th, td, textarea
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin: 0px;
+}
+
+hr
+{
+	color: #667B3E;
+	background-color: #667B3E;
+}
+
+div.hr
+{
+    height: 1px;
+    border-bottom: solid 1px #667B3E;
+    margin: 5px 0px;
+}
+
+/* Links */
+a, .TextLink
+{
+	color: rgb(77, 121, 8); /*#000066;*/
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.TextLink.Small
+{
+    font-size: 8pt;
+}
+
+a:active 
+{
+}
+
+a:hover, .TextLink:hover
+{
+	color: #CC0000;
+	text-decoration: underline;
+}
+
+a:link 
+{
+}
+
+a:visited 
+{
+}
+
+.Rno
+{
+    color: #D0DCB8;
+    float: right;
+}
+
+.Env {
+    text-align: center;
+    display: table-cell;
+    width: 90px;
+    height: 27px;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: large;
+    color: firebrick;
+}
+
+.FeatureMain, .FeatureSub, .FeatureSub1 
+{
+	font-size: 20pt;
+	/*color: #000066;*/
+	color: #667B3E;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.FeatureSub 
+{
+	font-size: 15pt;
+	padding-bottom: 0px;
+}
+
+.FeatureSub1 
+{
+	font-size: 10pt;
+	padding-bottom: 0px;
+}
+
+.UnpaidJobs div.FeatureSub 
+{
+    padding-top: 20px;
+}
+
+
+/* Navigation Menus */
+.Nav 
+{
+	margin-left: 5px;
+	font-size: 10pt;
+	color: #FFFFFF;
+}
+
+.Nav a 
+{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.Nav a:active 
+{
+}
+
+.Nav a:hover 
+{
+	color: #FFFF00;
+	text-decoration: underline;
+}
+
+.Nav a:link 
+{
+}
+
+.Nav a:visited 
+{
+}
+
+.NavMain
+{
+	font-weight: bold;
+	font-size: 12pt;
+	margin-top: 20px;
+	color: #000066;
+}
+
+.NavSub
+{
+	margin-left: 15px;
+	font-size: 12pt;
+	font-weight: normal;
+	margin-top: 5px;
+	color: #000066; 
+}
+
+.NavSub1
+{
+	margin-left: 30px;
+	font-size: 11pt;
+	font-weight: normal;
+	margin-top: 5px;
+	color: #000066;
+}
+
+.NavSub2
+{
+	margin-left: 45px;
+	font-size: 10pt;
+	font-weight: normal;
+	margin-top: 5px;
+	color: #000066;
+}
+
+/* FAQ */
+.FAQ, .FAQLight
+{
+	font-size: 12pt;
+	font-weight: bold;
+	margin-top: 5px;
+	color: #000066; 
+}
+
+.FAQLight
+{
+	color: #788cab;
+}
+
+.FAQ li
+{
+	margin-top: 5px;
+}
+
+.Q, .HighLight, a:hover.HighLight, a:hover.HighLightOn
+{
+	font-weight: bold;
+	color: #000066;
+	padding-top: 10px;
+}
+
+.A 
+{
+	font-weight: normal;
+	padding-top: 5px;
+}
+
+.A p 
+{
+	margin-top: -10px;
+}
+
+.HighLightOn
+{
+	background-color: yellow;
+}
+
+a:hover.HighLight, a:hover.HighLightOn
+{
+	text-decoration: none;
+	padding-top: 0px;
+}
+
+.Input
+{
+}
+
+.Input td, .Input input
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+}
+
+.InputBorder
+{
+	border: thin solid black;
+	background-color: white;
+}
+
+.InputGroupTitle
+{
+	width: 95%;
+	font-weight: bold;
+	font-size: 10pt;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	padding-top: 15px;
+	text-align: left;
+}
+
+.InputGroupEdit
+{
+	padding-top: 15px;
+	font-size: 8pt;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	text-align: right;
+}
+
+.InputTitle
+{
+	font-weight: bold;
+	text-align: right;
+	padding: 1px;
+	vertical-align: top;
+}
+
+.InputColSpace
+{
+	width: 10px;
+}
+
+.Required
+{
+	color: red;
+	text-align: right;
+	vertical-align: super;
+	width: 7px;
+}
+
+.ErrMsg
+{
+	color: #FF0000;
+}
+
+td.Copyright, td.Disclaimer
+{
+	font-size: 7pt;
+}
+
+.SmallPrint
+{
+	font-size: 10px;
+}
+
+.Submit
+{
+	font-size: 9pt; 
+	height: 20px;
+}
+
+.Tabs td
+{
+	font-weight: bold;
+	font-size: 18pt;
+	color: #667B3E;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+td .CurrTab
+{
+	font-weight: bold;
+	font-size: 18pt;
+	color: #667B3E;
+	background-color: Silver;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.MaintMainTitle 
+{
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: left;
+	white-space: nowrap
+}
+
+.MaintTitle 
+{
+	font-weight: bold;
+	text-align: right;
+/*	padding: 1px;
+	vertical-align: bottom; */	
+	white-space: nowrap
+}
+
+.MaintSelect
+{
+	height: 350px;
+	width: 225px;
+}
+
+.MaintSelectWide
+{
+	height: 350px;
+	width: 275px;
+}
+
+.MaintRno
+{
+	width: 50px;
+}
+
+.MaintNameShort
+{
+	width: 257px;
+}
+
+.MaintName
+{
+	width: 175px;
+}
+
+.MaintNotes
+{
+	width: 175px;
+}
+
+.MaintNotes, .WideNotes
+{
+	height: 50px;
+}
+
+.WideNotes
+{
+	width: 500px;
+}
+
+.MaintShort
+{
+	width: 100px;
+}
+
+.MaintCC
+{
+	width: 140px;
+}
+
+.MaintUser, #DepositInvoiceDialog .MaintUser
+{
+	font-size: 7pt;
+	width: 80px;
+	text-align: center;
+}
+
+.MaintDate, #DepositInvoiceDialog .MaintDate
+{
+	font-size: 7pt;
+	width: 100px;
+	text-align: center;
+}
+
+.MaintDateTime
+{
+	width: 140px;
+}
+
+.MaintLine
+{
+	height: 1px;
+	color: Black;
+}
+
+#ExpandedSearch
+{
+    /*display: none;*/
+}
+
+#ExpandedSearch td, #ExpandedSearch input
+{
+    font-size: 8pt;
+}
+
+.SearchValue
+{
+    width: 145px;
+}
+
+.SearchDate
+{
+    width: 118px;
+}
+
+#MoreSearch, #LessSearch
+{
+    font-size: 12pt;
+    cursor: pointer;
+    color: blue;
+    float: right;
+}
+
+.SelectListCurr
+{
+	color: #D0DCB8; 
+	background-color: #667B3E; 
+
+	/*color: #D0DCB8; 
+	background-color: #667B3E; */
+}
+
+.SelectList
+{
+	color: #667B3E; 
+	background-color: #D0DCB8; 
+
+	/*color: #667B3E; 
+	background-color: #D0DCB8; */
+}
+
+.Search
+{
+    width: 196px;
+}
+
+.SelectJob
+{
+	width: 200px;
+	height: 470px;
+}
+
+.SelectCrew
+{
+	width: 130px;
+	height: 470px;
+}
+
+.SelectFilter td
+{
+	font-size: 8pt;
+}
+
+.SelectCount
+{
+	font-size: 8pt;
+}
+
+#lstList option.Proposal
+{
+    color: #9A0202; /*rgb(219, 79, 0);*/
+    font-style: italic;
+}
+
+#trMsg td
+{
+    text-align: right;
+    color: red;
+    font-weight: bold;
+}
+
+.JobPhone, .JobEmail
+{
+	width: 128px;
+}
+
+.JobLocation
+{
+	width: 230px;
+}
+
+.JobDir
+{
+	width: 247px;
+	height: 50px;
+}
+
+/*td.tdJobDate img.ui-datepicker-trigger*/
+img.ui-datepicker-trigger
+{
+    vertical-align: middle;
+}
+
+.JobDate, .JobTime
+{
+	width: 80px;
+	text-align: center;
+}
+
+.JobServings, .JobServingsNotSame
+{
+	width: 50px;
+}
+
+.JobPrice, .JobPriceNotSame
+{
+	width: 50px;
+}
+
+.InvoicePage .Inputs .RentalsDesc
+{
+    width: 304px;
+    text-align: left;
+}
+
+.JobSubTotal /*, .JobSubTotalNotSame */
+{
+	width: 80px;
+}
+
+.JobNotes
+{
+	height: 50px;
+	width: 420px;
+}
+
+.JobPct
+{
+	width: 60px;
+    text-align: right;
+}
+
+.TaxPct
+{
+}
+
+i.bookmark
+{
+	color: #667B3E;
+    font-size: 16px;
+    top: 3px;
+    cursor: pointer;
+    position: absolute;
+}
+
+#JobToolbar 
+{
+    padding: 5px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+#JobToolbar div 
+{
+    margin-top: 5px;
+}
+
+#JobToolbar div:first-child 
+{
+    margin-top: 0px;
+}
+
+.CardNum
+{
+    width: 130px;
+}
+
+#InvalidCCNum
+{
+    color: #CC0000;
+    display: block;
+}
+
+#Payment dl
+{
+    width: 410px;
+    margin: 10px 0px;
+}
+
+#Payment dl dt
+{
+    display: inline-block;
+    text-align: right;
+    width: 100px;
+    vertical-align: top;
+
+    margin: 5px 5px 0px 0px;
+    color: #888;
+    font-size: 10pt;
+}
+
+#Payment dl dd
+{
+    display: inline-block;
+    width: 300px;
+    margin-left: 0px;
+}
+
+#Payment .PmtAmt
+{
+    width: 90px;
+    text-align: right;
+}
+
+#Payment .PmtDate
+{
+    width: 90px;
+    text-align: center;
+}
+    
+#Payment input.PmtRef, #Payment .CCLong
+{
+    width: 200px;
+}
+
+#Payment .CCShort
+{
+    width: 80px;
+}
+
+#Payment .Label
+{
+    font-size: 0.8em;
+    color: #888;
+    line-height: 12pt;
+    padding-top: 6px;
+    display: block
+}
+
+.Cal table
+{
+	border: black 1px solid;
+	background-color: #ffffff;
+}
+
+.Cal td
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	text-align: center;
+	width: 20px;
+	cursor: default;
+}
+
+.CalHdr, td.CalHdr
+{
+	width: 100%;
+}
+
+table.CalHdr
+{
+	border: none;
+	width: 100%;
+}
+
+.CalHdr td
+{
+	width: auto;
+	background-color: #D0DCB8;
+}
+
+.CalDaysHdr td
+{
+	border-bottom: black 1px solid;
+}
+
+.CalOtherMonth
+{
+	background-color: #EEEEEE;
+}
+
+.CalCurr
+{
+	background-color: #D0DCB8;
+}
+
+.CalSelected
+{
+	background-color: #D0DCB8;
+}
+
+.TabMenu
+{
+	border-bottom: #667B3E thin solid 1px;
+	width: 100%;
+}
+
+.JobInfo, .JobInfo td, .JobInfoTitle
+{
+	color: #667B3E;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+span.JobInfoTitle
+{
+	color:  #D0DCB8;
+}
+
+.FeeDesc {
+    width: 335px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: height 0.2s;
+    -webkit-transition: height 0.2s;
+    -moz-transition: height 0.2s;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+label.Reset:hover 
+{
+	cursor: pointer;
+	color: #CC0000;
+    text-decoration: underline;
+}
+
+.SeeOptions 
+{
+    color: #A7A7A7;
+    margin-left: 10px;
+}
+
+.SeeOptions:hover
+{
+	cursor: pointer;
+}
+
+ul.Options
+{
+    margin: 0px;
+    padding: 0px 0px 0px 30px;
+}
+ul.Options > li
+{
+    list-style: none;
+}
+
+.NumCrew
+{
+    width: 30px;
+    text-align: center;
+}
+
+.FoodCategory, .DupFoodCategory
+{
+	width: 80px;
+}
+
+.MenuItem, .DupMenuItem, .Ingredient, .DupIngredient
+{
+	width: 200px;
+}
+
+.ServiceItem, .DupServiceItem
+{
+	width: 150px;
+}
+
+.SupplyItem, .DupSupplyItem
+{
+	width: 200px;
+}
+
+.CrewMember, .DupCrewMember
+{
+	width: 130px;
+}
+
+.Assignment, .DupAssignment
+{
+	width: 150px;
+}
+
+.RecipeQty, .DupRecipeQty
+{
+	width: 80px;
+	text-align: right;
+}
+
+.RecipeUnits, .DupRecipeUnits
+{
+	text-align: left;
+}
+
+.RecipeList
+{
+	width: 200px;
+	height: 325px;
+}
+
+.JobServingsNotSame, .DupFoodCategory, .DupMenuItem, .DupServiceItem, .DupSupplyItem, 
+.DupCrewMember, .DupAssignment, .DupIngredient, .DupRecipeQty, .DupRecipeUnits, td.DupIngredient
+.NotChecked, .JobSubTotalNotSame, .JobPriceNotSame, 
+.OptionSet
+{
+	background-color: #D0DCB8;
+}
+
+.NotChecked
+{
+	width: 60px;
+}
+
+#MultiSelectMenuItems, #MenuItemsSortOrder, #MergeCategories, #MergeMenuItems, #ErrMsg
+{
+    display: none;
+}
+
+#MultiSelectMenuItems ul.Items, #MenuItemsSortOrder ul.Items, #IngredSelect ul.Ingred
+{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#MenuItemsSortOrder ul.Items span.ui-icon 
+{
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#NewMenuItem dt, #NewMenuItem dd, #NewIngredient dt, #NewIngredient dd
+{
+    display: inline-block;
+}
+
+#NewMenuItem dt, #NewIngredient dt
+{
+    text-align: right;
+    width: 120px;
+}
+
+#NewMenuItem dd, #NewIngredient dd
+{
+    margin-left: 0px;
+    width: 210px;
+}
+
+#NewMenuItem input[type=text], #NewMenuItem select, #NewIngredient input[type=text]
+{
+    width: 200px; 
+}
+
+/*
+.JobSubTotalNotSame
+{
+	width: 80px;
+}
+*/
+
+td.ColTable
+{
+	border: #667B3E 1px solid;
+	padding: 5px;
+}
+
+.InvMsg
+{
+	width: 265px;
+	height: 55px;
+}
+
+.InvCustBox
+{
+	border: black 1px solid; 
+	padding-left: 5px;
+	padding-right: 5px;
+}	
+
+.Reprint
+{
+	border: black 1px solid; 
+	padding: 2px; 
+	font-weight: bold; 
+	font-size: 12pt;
+}	
+	
+td.InvTotal, .NoteBox td, td.NoteBox, .Box
+{
+	/* border: black 1px solid; */
+	padding: 2px;
+}
+
+.InvTotal td
+{
+	font-weight: bold; 
+	font-size: 12pt;
+}
+
+.InvPmtNote
+{
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.InvBody, .JobBody
+{
+	padding: 10px;
+}
+
+.JobBody hr
+{
+	width: 200px;
+	height: 1px;
+	color: Black;
+}
+
+.JobTitle
+{
+	font-size: 18pt;
+	font-weight: bold;
+}
+
+.JobSubTitle
+{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.JobItem
+{
+	font-size: 12pt;
+}
+
+.JobBullet
+{	
+	vertical-align: middle;
+	margin-right: 1px;
+	margin-top: 2px;
+}
+
+div.Payment
+{
+    position: relative;
+}
+
+div.Payment div:first-child
+{
+    display: inline-block;
+    background-color: #FFFFFF;
+    border-bottom: none 1px black;
+    position: initial;
+    width: initial;
+    top: initial;
+    z-index: initial;
+}
+
+div.Payment div
+{
+    border-bottom: solid 1px black;
+    position: absolute;
+    width: 100%;
+    top: 1.1em;
+    z-index: -1;
+}
+
+div.Payment div:first-child.Sub
+{
+    padding-left: 40px;
+}
+
+td.Header
+{
+	background-image: url(Images/ATop.gif); 
+	background-repeat: repeat-x;
+}
+
+td.TopMenu
+{
+	height: 27px;
+	/*width: 100%;*/
+	vertical-align: top;
+	background-image: url(Images/ATop.gif); 
+	background-repeat: repeat-x;
+	background-position: bottom left;
+}
+
+td.LeftSideMenu
+{
+	width: 90px;
+	vertical-align: top;
+	background-image: url(Images/ALeftSide1.gif); 
+	background-repeat: repeat-y;
+	background-position: top left;
+}
+
+td.MenuButton, td.MenuButtonOver, td.TopMenuButton, td.TopMenuButtonOver
+{
+	text-align: center;
+	text-indent: -15px;
+	width: 90px;
+	height: 24px;
+	background-image: url(Images/AMenuButton1.gif);
+	background-position: top right;
+}
+
+td.TopMenuButton, td.TopMenuButtonOver
+{
+	width: 110px;
+}
+
+td.MenuButton a, td.MenuButtonOver a, td.TopMenuButton a, td.TopMenuButtonOver a
+{
+	color: #9A0202;
+	text-decoration: none;
+}
+
+td.MenuButtonOver, td.TopMenuButtonOver
+{
+	background-image: url(Images/AMenuButtonPress1.gif);
+}
+
+td.Page
+{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+div.NewIngred
+{
+	background-color: #D0DCB8;
+	border: solid 2px #486c19;
+	padding: 10px;	
+	color: #486c19;
+}
+
+div.NewIngred table
+{
+	margin-top: 8px;
+}
+
+div.NewIngred table td:first-child
+{
+	text-align: right;
+	padding-right: 8px;
+	font-weight: bold;
+}
+
+div.NewIngred table td
+{
+	text-align: left;
+}
+
+div.NewIngred .Ingredient
+{
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+div.NewIngred .Category
+{
+	width: 150px;
+}
+
+div.NewIngred .OrderUnits, div.NewIngred .ServingUnits
+{
+	width: 100px;
+}
+
+table.Edit td:first-child
+{
+	text-align: right;
+	font-weight: bold;
+	padding-right: 10px;
+}
+
+table.Edit td
+{
+	text-align: left;
+}
+
+table.Edit td.FeatureMain
+{
+	text-align: center;
+}
+
+tr.FirstRptCategory
+{
+	padding-top: 0px;
+}
+
+.StoreNote
+{
+	width: 150px;
+	border-bottom: solid 1px #aaaaaa;
+}
+
+.DimTitle
+{
+    color: #888;
+}
+
+div.InvAmts
+{
+    min-height: 450px; 
+}
+
+div.InvAmts > table:first-child
+{
+    width: 475px;
+    line-height: 1.7em;
+}
+
+.InvField
+{
+    text-align: left;
+}
+
+
+.InvoicePage .Inputs input, #PriceDialog .Count, #PriceDialog .Price
+{
+    text-align: right;
+}
+
+.Count
+{
+    width: 50px;
+}
+
+.Price
+{
+    width: 80px;
+}
+
+.Desc
+{
+    width: 200px;
+}
+
+.AddPrice, .EditPrice, .DeletePrice, .AddPayment, .EditPayment, .DeletePayment
+{
+    cursor: pointer;
+}
+
+.AddPayment
+{
+    padding-bottom: 2px;
+}
+    
+.Hide
+{
+    display: none;
+}
+
+.SectionBreak
+{
+    margin: 7px 0px;
+    border-top: dotted 1px #ddd;
+}
+
+#PriceDialog dl
+{
+    width: 335px;
+}   
+
+#PriceDialog dl dt, #EmailDialog dl dt, #DepositInvoiceDialog dl dt 
+{
+    margin: 3px 5px 0px 0px;
+    display: inline-block;
+    width: 105px;
+    text-align: right;
+    color: #888;
+    font-size: 10pt;
+    vertical-align: top;
+}
+    
+#PriceDialog dl dd
+{
+    margin: 0px;
+    display: inline-block;
+    width: 210px;
+}
+
+#EmailDialog dl, #DepositInvoiceDialog dl
+{
+    margin-bottom: 0px;
+}
+
+#EmailDialog dl dt
+{
+    width: 70px;
+}
+
+#EmailDialog dl dd, #DepositInvoiceDialog dl dd 
+{
+    margin: 0px;
+    display: inline-block;
+    /*width: 210px;*/
+}
+
+#EmailDialog dl dd input[type="text"], #EmailDialog dl dd div
+{
+    width: 500px;
+}
+
+#EmailDialog dl dd textarea
+{
+    margin: 2px 0px;
+    width: 498px;
+    height: 200px;
+}
+
+#DepositInvoiceDialog dl
+{
+    width: 340px;
+}
+
+#DepositInvoiceDialog dd
+{
+    width: 220px;
+}
+
+#DepositInvoiceDialog .PmtAmt
+{
+    width: 90px;
+    text-align: right;
+}
+
+#DepositInvoiceDialog .MaintDate, #DepositInvoiceDialog .MaintUser
+{
+    font-size: 8pt;
+    margin-top: 3px;
+}
+
+table.Acct
+{
+    margin: 0px auto 20px;
+    border-collapse: collapse;
+    width: 1000px;
+}
+
+table.Acct tr.odd
+{
+    background-color: rgb(228, 235, 217);
+}
+
+table.Acct th, table.Acct td
+{
+    padding-top: 3px;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+table.Acct td.nil
+{
+    padding: 0px;
+}
+
+table.Acct td dl
+{
+    margin: 0px;
+    width: 780px;
+    position: relative;
+    top: -7px;
+}
+
+table.Acct td dl dt
+{
+    display: inline-block;
+    text-align: right;
+    width: 65px;
+    font-size: 80%;
+    color: #888;
+}
+
+table.Acct td dl dd
+{
+    display: inline-block;
+    margin-left: 10px;
+    width: 120px;
+}
+table.Acct td dl dd.short
+{
+    width: 40px;
+}
+
+table.Acct td dl dd.mid
+{
+    width: 60px;
+}
+
+table.Acct td dl dd.long
+{
+    width: 240px;
+}
+
+.Updated
+{
+    color: #C71E1E;
+}
+
+.Left
+{
+    text-align: left;
+}
+
+.Right
+{
+    text-align: right;
+}
+
+.Center
+{
+    text-align: center;
+}
+
+div.CheckAll, div.ClearAll
+{
+    cursor: pointer;
+	color: #000066;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+div.CheckAll:hover, div.ClearAll:hover
+{
+    color: #CC0000;
+    text-decoration: underline;
+}
+
+div.CategoryTitles, ul.Categories
+{
+    margin: 0px auto;
+    display: block;
+    width: 430px;
+}
+
+div.CategoryTitles b
+{
+    display: inline-block;
+}
+
+div.CategoryTitles b:nth-child(1)
+{
+    width: 240px;
+    margin-left: 31px;
+}
+
+div.CategoryTitles b:nth-child(2)
+{
+    width: 80px;
+    text-align: center;
+}
+
+div.CategoryTitles b:nth-child(3)
+{
+    width: 40px;
+    text-align: center;
+}
+
+ul.Categories
+{
+    list-style: none;
+    padding: 0px 0px 5px 0px;
+    height: 600px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+ul.Categories li
+{
+    padding: 0px 0px 4px 10px;
+}
+
+ul.Categories li:hover
+{
+	background-color: #D0DCB8;
+}
+
+ul.Categories span.ui-icon
+{
+    display: inline-block;
+    margin-right: 5px;    
+}
+
+ul.Categories label
+{
+    width: 240px;
+    display: inline-block;
+}
+
+ul.Categories input[type=text]
+{
+    width: 240px;
+    border-width: 0px;
+}
+
+ul.Categories li input[type=checkbox]:nth-child(6)
+{
+    width: 80px;    
+}
+
+ul.Categories li input[type=checkbox]:nth-child(7)
+{
+    width: 40px;    
+}
+
+.Update
+{
+    display: block;
+    margin: 0px auto 20px;
+    text-align: center;
+    width: 200px;
+}
+
+ul.Items 
+{
+    margin: 20px;
+    display: inline-block;
+    width: 295px;
+    list-style: none;
+    padding: 0px 0px 5px 0px;
+    vertical-align: top;
+}
+
+ul.Items li 
+{
+    padding: 0px 0px 4px 10px;
+    text-align: left;
+}
+
+ul.Items li:hover 
+{
+        background-color: #D0DCB8;
+}
+
+ul.Items span.ui-icon 
+{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+ul.Items label 
+{
+    width: 240px;
+    display: inline-block;
+}
+
+ul.Items input[type=text] 
+{
+    width: 240px;
+    border-width: 0px;
+}
+
+ul.Items li img.NotShow 
+{
+    display: initial;
+}
+
+ul.Items li img.Show 
+{
+    display: none;
+}
+
+ul.Items li.NotShown img.NotShow 
+{
+    display: none;
+}
+
+ul.Items li.NotShown img.Show 
+{
+    display: initial;
+}
+
+ul.Items li.NotShown label.Value
+{
+    text-decoration: line-through;
+}
+
+ul#ulAssocItems
+{
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+}
+
+ul.HideMenuItems, ul.MenuItemsRpt, ul.MenuItemQuotes
+{
+    margin: 0px auto;
+    padding-left: 0px;
+    width: 665px;
+}
+
+ul.MenuItemsRpt
+{
+    width: 800px;
+}
+
+ul.HideMenuItems > li.Titles, ul.MenuItemsRpt > li.Titles, ul.MenuItemQuotes > li.Titles
+{
+    font-weight: bold;
+}
+
+ul#ulMenuItems.HideMenuItems
+{
+    height: 600px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+ul.HideMenuItems > li, ul.MenuItemsRpt > li, ul.MenuItemQuotes
+{
+    list-style: none;
+}
+
+ul.HideMenuItems > li:hover, ul.MenuItemsRpt > li:hover, ul.MenuItemQuotes > li:hover
+{
+    background-color: #D0DCB8; 
+}
+
+ul.HideMenuItems div, ul.MenuItemsRpt div, ul.MenuItemQuotes div
+{
+    display: inline-block;
+}
+
+ul.HideMenuItems div:nth-child(1), ul.MenuItemsRpt div:nth-child(1), ul.MenuItemQuotes div:nth-child(1)
+{
+    width: 230px;
+}
+
+ul.HideMenuItems div:nth-child(2), ul.MenuItemsRpt div:nth-child(2), ul.MenuItemQuotes div:nth-child(2)
+{
+    width: 320px;
+}
+
+ul.HideMenuItems div:nth-child(3), ul.MenuItemQuotes div:nth-child(3), ul.MenuItemQuotes div:nth-child(4)
+{
+    width: 40px;
+    text-align: center;
+}
+
+ul.MenuItemsRpt div:nth-child(3)
+{
+    width: 200px;
+}
+
+ul.MenuItemQuotes div:nth-child(3), ul.MenuItemQuotes div:nth-child(4)
+{
+    text-align: right;
+    width: 50px;
+}
+
+ul.MenuItems
+{
+    list-style: none;
+    padding: 0px 0px 5px 0px;
+    width: 400px;
+    margin: 0px auto;
+}
+
+ul.MenuItems li
+{
+    padding: 4px 0px 4px 10px;
+}
+
+ul.MenuItems li:hover
+{
+	background-color: #D0DCB8;
+}
+
+ul.MenuItems li.NotShow label.Name
+{
+    text-decoration: line-through;
+}
+
+ul.MenuItems li.NotShow img.Show
+{
+    display: initial;
+}
+
+ul.MenuItems li.NotShow img.NotShow
+{
+    display: none;
+}
+
+ul.MenuItems span.Inline
+{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+ul.MenuItems span.Space
+{
+    display: inline-block;
+    width: 40px;
+}
+
+ul.MenuItems label.Title.Name
+{
+    font-weight: bold;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+ul.MenuItems label.Name
+{
+    margin-left: 40px;
+    width: 240px;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 13px;
+}
+
+ul.MenuItems input[type=text].Title.Name
+{
+    margin-left: 0px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+ul.MenuItems input[type=text].Name
+{
+    margin-left: 40px;
+    width: 240px;
+    border-width: 0px;
+}
+
+ul.MenuItems li label.Delete
+{
+    margin-left: 20px;
+}
+
+ul.MenuItems li input.Delete, ul.MenuItems li label.Delete
+{
+    display: none;
+}
+
+ul.MenuItems li:hover input.Delete, ul.MenuItems li:hover label.Delete
+{
+    display: initial;
+}
+
+ul.MenuItems li img 
+{
+    width: 16px;
+    height: 16px;
+    opacity: 0.4;
+    position: relative;
+    vertical-align: top;
+}
+
+ul.MenuItems li.NotShow label.Name 
+{
+    text-decoration: line-through;
+}
+
+ul.MenuItems li img.Show
+{
+    display: none;
+}
+
+ul.MenuItems li img.NotShow
+{
+    display: initial;
+}
+
+ul.MenuItems li:hover img 
+{
+    opacity: 1.0;
+}
+
+.PdfPreview
+{
+}
+
+#ProposalPricing .Inputs td 
+{
+	vertical-align: top;
+	padding-bottom: 10px;
+}
+
+#ProposalPricing .Inputs td:nth-child(1)
+{
+	padding-top: 4px;
+}
+
+#ProposalPricing .Inputs td:nth-child(2), #ProposalPricing .Inputs td:nth-child(3)
+{
+	padding-left: 7px;
+}
+
+option.Hidden
+{
+    color: rgb(151, 151, 151);
+    font-style: italic;
+}
+
+.InvDtTm
+{
+    font-size: 8pt;
+    width: 95px;
+}
+
+#Ingredients .Name
+{
+    width: 300px;
+}
+
+#Ingredients #lblRecipes
+{
+    float: right;
+    line-height: 1.9em;
+}
+
+#Ingredients .ListWrapper
+{
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#Ingredients .ListWrapper:first-child
+{
+    margin-right: 40px;
+}
+
+#Ingredients .ListWrapper .Title
+{
+    display: inline-block;
+    font-weight: bold;
+}
+
+#Ingredients .ListWrapper .Edit
+{
+    float: right;
+}
+
+#Ingredients .ListWrapper .List
+{
+    width: 200px;
+    padding: 2px;
+    min-height: 40px;
+    border: solid 1px #ccc;
+}
+
+#Ingredients #RecipesDialog, #Ingredients #PrefVendorsDialog, #Ingredients #RejVendorsDialog
+{
+    display: none;
+}
+
+#Ingredients ul.Vendors
+{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#Ingredients .ListWrapper textarea
+{
+    width: 200px;
+    min-height: 40px;
+    display: block;
+}
+
+#Dates
+{
+    margin: 15px auto;
+}
+
+.UserNameLabel
+{
+    vertical-align: text-top;
+    padding-top: 3px;
+}
+
+.UserName
+{
+    font-size: 8.5pt;
+    color: #888;
+    font-style: italic;
+}
+
+input.error
+{
+    border: 1px dotted red;
+}
+
+label.error
+{
+    color: red;
+    font-style: italic;
+}
+
+tr.Declined 
+{
+    color: red;
+}
+
+#PageContent
+{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+@media print
+{
+    .NoPrint, .TopMenuButton, .LeftSideMenu
+    {
+        display: none;
+    }
+
+    .UnpaidJobs .FeatureSub
+    {
+        /*page-break-before: always;*/
+    }
+
+    .UnpaidJobs div.FeatureSub:nth-of-type(2)
+    {
+        /*page-break-before: initial;*/
+    }
+
+    .CCPrint
+    {
+        margin: 80px auto; 
+        width: 380px; 
+        padding: 20px;
+    }
+
+    .CCPrint h1
+    {
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    .CCPrint dt
+    {
+        float: left;
+        text-align: right; 
+        width: 45%;
+        margin-top: 5px;
+    }
+    
+    .CCPrint dd
+    {
+        float: right;
+        margin-left: 5%;
+        width: 50%;
+        margin-top: 5px;
+    }
+} 
+
+.GlutenFree:before, .Vegan:before, .Vegetarian:before, .DairyFree:before, .Nuts:before { background-color: black; color: white; font-size: 80%; font-weight: bold; padding: 2px 4px; margin-left: 3px; }
+.GlutenFree:before { content: "GF"; } 
+.Vegan:before { content: "V"; } 
+.Vegetarian:before { content: "Veg"; } 
+.DairyFree:before { content: "DF"; } 
+.Nuts:before { content: "N"; } 

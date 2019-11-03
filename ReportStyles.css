@@ -1,0 +1,253 @@
+/* ReportSytles.css */
+
+.RptBody
+{
+	margin: 5px;
+}
+
+.RptBody a
+{
+	color: black;
+}
+
+.RptTitle
+{
+	font-size: 16pt;
+	font-weight: bold;
+    text-align: center;
+}
+
+.RptSubTitle
+{
+	font-size: 14pt;
+	font-weight: bold;
+    text-align: center;
+}
+
+.RptSubTitleSmall
+{
+	font-size: 10pt;
+	font-weight: bold;
+    text-align: center;
+}
+
+.RptHdr, .RptHdrBold
+{
+	border-bottom: solid 1px black;
+}
+
+.RptHdrBold
+{
+	font-weight: bold;
+}
+
+.RptJobBorder
+{
+	border: solid 1px #CCC;
+	border-spacing: 2px;	
+	width: 500px;
+    margin: 0px auto;
+    padding: 0px 3px;
+}
+
+.RptSubTitleBorder
+{
+	border: solid 1px #AAA;
+	border-spacing: 2px;	
+}
+
+.RptNoticeTitle
+{
+    line-height: 1.8em;
+}
+
+.RptNotice
+{
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.RptSmall
+{
+	font-size: 8pt;
+}
+
+.RptBullet
+{	
+	vertical-align: middle;
+	margin-right: 1px;
+	margin-top: 2px;
+}
+
+.RptMenuItem
+{
+	font-size: 12pt;
+}
+
+.RptSmallBtn
+{
+	font-size: 8pt;
+	height: 20px;
+}
+
+.RptInfo
+{
+	background-color: #ededed;
+}
+
+.RptTopSpace
+{
+}
+
+tr.RptCategory
+{
+	padding-top: 40px;
+}
+
+.RptMenuItem
+{
+}
+
+.RptNote, .RptNote1, .RptNote2, .RptNote3, .RptNote4, .RptNote5, .RptNote6, .RptNote7
+{
+    padding-left: 15px;
+    color: #FF4700;   
+}
+
+.RptNote1 { color: #A30006; }
+.RptNote2 { color: #0B108C; }
+.RptNote3 { color: #4DCCC4; }
+.RptNote4 { color: #480A3D; }
+.RptNote5 { color: #8A9A0E; }
+.RptNote6 { color: #E97F01; }
+.RptNote7 { color: #774338; }
+
+.RptQty
+{
+    float: right;
+    padding-left: 15px;
+}
+
+@media print
+{
+	.RptInfo, .RptSmallBtn, .RptTopSpace
+	{
+		display: none;
+	}	
+}
+
+table.CalSched
+{
+	border-bottom: solid 1px black; 
+	border-right: solid 1px black;
+}
+
+.CalSched td, td.CalSched, td.CalSchedNot
+{
+	border-top: solid 1px black; 
+	border-left: solid 1px black;
+	padding: 2px;
+}
+
+td.CalSchedMid, td.CalSchedMidNot
+{
+	border-top: solid 1px #eeeeee;
+	border-left: solid 1px black;
+	padding: 2px;
+}
+
+td.CalSchedNot, td.CalSchedMidNot
+{
+	background-color: #eeeeee;
+/*	color: black; */
+}
+
+@media print
+{
+	td.CalSched, td.CalSchedMid
+	{
+		font-weight: bold;
+		font-size: 12pt;
+	}
+
+	td.CalSchedNot, td.CalSchedMidNot
+	{
+	}
+}
+
+table.NoBorder, .NoBorder td, td.NoBorder
+{
+	border: none;
+	padding: 0px;
+}
+
+.CalMainTime
+{
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.CalMinorTime
+{
+	font-size: 8pt;
+}
+
+table.Location
+{
+    border-left: solid 1px #447FFA;
+}
+
+div.Location
+{
+    text-align: center;
+    color: #447FFA;
+    border-top: solid 1px #447FFA;
+    margin: .2em 0px;    
+}
+
+#DailyJobs body, #DailyJobs th, #DailyJobs td, #DailyJobs textarea, #DailyJobs .RptMenuItem
+{
+    font-size: 7pt;
+}
+
+#DailyJobs .RptTitle
+{
+    font-size: 12pt;
+}
+
+#DailyJobs .RptNotice, #DailyJobs .RptSubTitle
+{
+    font-size: 9pt;
+}
+
+#DailyJobs .RptBullet
+{
+    width: 5px;
+}
+
+table.Report
+{
+    margin: 0px auto;
+}
+
+table.Report th
+{
+    text-align: left;
+}
+
+#DailyJobs ul.IngredSel
+{
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+}
+
+#JobSheet ul.IngredSel
+{
+    margin: 2px;
+    padding: 0px 0px 0px 20px;
+}
+
+#JobSheet ul.IngredSel li 
+{
+    line-height: 1.0em;
+}
