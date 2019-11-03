@@ -1,7 +1,7 @@
 .svn/
 NotUsed/
 output/
-packages/
+#packages/
 Sling/Get Calendar Example.txt
 App_Data/PublishProfiles/admin.marvellouscatering.net.pubxml
 website.publishproj
