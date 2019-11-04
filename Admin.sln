@@ -5,22 +5,23 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Admin", ".", "{04CA3134-DC60-4758-86B9-11A5561B5371}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_62728"
-		Debug.AspNetCompiler.PhysicalPath = "."
+		Debug.AspNetCompiler.PhysicalPath = "..\Admin\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62728\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_62728"
-		Release.AspNetCompiler.PhysicalPath = "."
+		Release.AspNetCompiler.PhysicalPath = "..\Admin\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62728\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "62728"
+		SlnRelativePath = "..\Admin\"
 	EndProjectSection
 EndProject
 Global
