@@ -1,2 +1,0 @@
-D:\PeteSoft\MarvellousCatering\Admin\obj\x86\Debug\Admin.csprojAssemblyReference.cache
-D:\PeteSoft\MarvellousCatering\Admin\obj\x86\Debug\Admin.csproj.CoreCompileInputs.cache
